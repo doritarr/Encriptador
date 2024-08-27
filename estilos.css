@@ -1,0 +1,135 @@
+/*-----------
+Fuentes
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*--------------
+Global Css
+---------------*/
+:root{
+    --Font:#495057;
+    --White:#FFFFFF;
+    --Dark-Blue:#0A3871;
+    --Gray:#343A40;
+    --Light-Gray:#F3F5FC;
+    --Medium-Blue:#0a38718a;
+    --RGBA:rgba(0,0,0,0.08);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--Light-Gray);
+    color: var(--Font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    margin-top: 30px;
+}
+
+header .logo {
+    width: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+.input-section {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.output-section {
+    width: 400px;
+    height: 500px;
+    background-color: var(--White);
+    border-radius: 32px 0px 0px 0px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--Gray);
+    resize: none;
+    color: var(--Font);
+}
+
+textarea::placeholder {
+    color: var(--Gray);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+}
+
+.btn-encriptar {
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+}
+
+.btn-desencriptar {
+    background-color: var(--Light-Gray);
+    color: var(--Dark-Blue);
+    border: 2px solid var(--Dark-Blue);
+}
+
+.btn-copiar {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(60% - 80px); /* Resto del espacio para el texto */
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

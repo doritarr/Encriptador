@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+    <img src="Frame 6.png" alt="Logo" class="logo">
+    <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <textarea id="input-text" placeholder="Ingrese el texto aquí..." class="encriptar"></textarea>
+            <p class="texto-info">Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button id="encrypt-btn" class="btn-encriptar">Encriptar</button>
+                <button id="decrypt-btn" class="btn-desencriptar">Desencriptar</button>
+               
+            </div>
+        </section>
+
+        <section class="output-section">
+            <div class="output-container">
+                <textarea id="output-text" placeholder="Ningún mensaje fue encontrado" class="revisar" readonly></textarea>
+                <button id="copy-btn" class="btn-copiar" style="visibility: hidden;">Copiar</button>
+            </div>
+            <div class="image-container">
+                <img class="img-muñeco" src="Muñeco.png" alt="Muñeco">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright 2024 - Encriptador de texto - desarrollado por Doris Herrera</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
